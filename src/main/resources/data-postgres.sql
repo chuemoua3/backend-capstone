@@ -1,1 +1,1 @@
-INSERT INTO songs(title, artist, lyrics, genre) VALUES('Go Crazy', 'Chris Brown', 'Oh baby.........', 'Hip-Hop');
+-- INSERT INTO songs(title, artist, lyrics, genre) VALUES('Go Crazy', 'Chris Brown', 'Oh baby.........', 'Hip-Hop');
