@@ -13,37 +13,35 @@ public class Song {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String title;
-    private String artist;
+    // private String songTitle;
     private String lyrics;
-    private String genre;
+    private String answer1;     //song title 1
+    private String answer2;     //song title 2
+    private String answer3;     //song title 3
+    private String answer4;     //song title 4
+
 
     public Song() {
     }
 
-    public Song(String title, String artist, String lyrics, String genre) {
+    public Song(String lyrics, String answer1, String answer2, String answer3, String answer4) {
+        super();
         // this.id = id;
-        this.title = title;
-        this.artist = artist;
         this.lyrics = lyrics;
-        this.genre = genre;
+        this.answer1 = answer1;
+        this.answer1 = answer2;
+        this.answer1 = answer3;
+        this.answer1 = answer4;
+
     }
 
-    public String getTitle() {
-        return title;
-    }
+    // public Long getId() {
+    //     return id;
+    // }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getArtist() {
-        return artist;
-    }
-
-    public void setArtist(String artist) {
-        this.artist = artist;
-    }
+    // public void setId(Long id) {
+    //     this.id = id;
+    // }
 
     public String getLyrics() {
         return lyrics;
@@ -53,12 +51,38 @@ public class Song {
         this.lyrics = lyrics;
     }
 
-    public String getGenre() {
-        return genre;
+    public String getAnswer1() {
+        return answer1;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setAnswer1(String answer1) {
+        this.answer1 = answer1;
     }
 
+    public String getAnswer2() {
+        return answer2;
+    }
+
+    public void setAnswer2(String answer2) {
+        this.answer2 = answer2;
+    }
+
+    public String getAnswer3() {
+        return answer3;
+    }
+
+    public void setAnswer3(String answer3) {
+        this.answer3 = answer3;
+    }
+
+    public String getAnswer4() {
+        return answer4;
+    }
+
+    public void setAnswer4(String answer4) {
+        this.answer4 = answer4;
+    }
+
+    
+    
 }

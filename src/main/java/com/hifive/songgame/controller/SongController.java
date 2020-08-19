@@ -1,9 +1,9 @@
 package com.hifive.songgame.controller;
 
+import java.util.Collection;
 import java.util.List;
 
 import com.hifive.songgame.model.Song;
-// import com.hifive.songgame.model.SongRequest;
 import com.hifive.songgame.repository.SongRepository;
 import com.hifive.songgame.service.SongService;
 
@@ -30,11 +30,11 @@ public class SongController {
         return this.songRepository.findAll();
 
     }
-
-    // @PostMapping(value="/songs", consumes = MediaType.APPLICATION_JSON_VALUE)
-    // public void addSongs(@RequestBody Song song){
-    //     SongService.addSongs(song);
-    //}
+   
+    @PostMapping(value="/songs")
+    public void addSongs(@RequestBody Song song){
+        SongService.addSongs(song);
+    }
 
     // @PostMapping("/post")
     // public void postSong(@RequestBody Song song){
