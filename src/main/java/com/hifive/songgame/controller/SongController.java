@@ -19,21 +19,24 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping("api/")
+@RequestMapping("/api")
 public class SongController {
 
     @Autowired
     private SongRepository songRepository;
 
-    @GetMapping("songs")
+    @Autowired
+    SongService songService;
+
+    @GetMapping("/songs")
     public List<Song> getSongs() {
         return this.songRepository.findAll();
 
     }
    
-    @PostMapping(value="/songs")
+    @PostMapping("/songs")
     public void addSongs(@RequestBody Song song){
-        SongService.addSongs(song);
+        songService.addSong(song);
     }
 
     // @PostMapping("/post")
