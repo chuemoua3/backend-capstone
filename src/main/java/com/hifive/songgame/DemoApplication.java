@@ -48,7 +48,7 @@ public class DemoApplication implements CommandLineRunner {
 		//Answer for 3-- D
 
 		//Question 4
-		this.songRepository.save(new Song("Cause I'll be at your door in ten minutes.  Whatever you go on, girl stay in it.  You ain't gotta leave the house to have a good time.  I'm 'a bring the good time home to you","A. Ten Minuets", "B. House Party", "C. Late", "D. Home Alone"));
+		this.songRepository.save(new Song("Cause I'll be at your door in ten minutes.  Whatever you go on, girl stay in it.  You ain't gotta leave the house to have a good time.  I'm 'a bring the good time home to you","A. Ten Minutes", "B. House Party", "C. Late", "D. Home Alone"));
 
 		//Answer for 4 --B
 
@@ -72,7 +72,7 @@ public class DemoApplication implements CommandLineRunner {
 
 		//Answer to 8-- C
 
-		//testing user
+		//testing user (post Method)
 		this.userRepository.save(new User("chue", 0));
 		
 
