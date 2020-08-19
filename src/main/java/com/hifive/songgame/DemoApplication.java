@@ -2,7 +2,9 @@
 package com.hifive.songgame;
 
 import com.hifive.songgame.model.Song;
+import com.hifive.songgame.model.User;
 import com.hifive.songgame.repository.SongRepository;
+import com.hifive.songgame.repository.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -18,6 +20,9 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Autowired
 	private SongRepository songRepository;
+
+	@Autowired
+	private UserRepository userRepository;
 
 	@Override
 	public void run(String... args) throws Exception {
@@ -67,7 +72,8 @@ public class DemoApplication implements CommandLineRunner {
 
 		//Answer to 8-- C
 
-
+		//testing user
+		this.userRepository.save(new User("chue", 0));
 		
 
 	}

@@ -24,8 +24,8 @@ import org.springframework.web.bind.annotation.RequestBody;
         @Autowired
         private UserRepository userRepository;
 
-        // @Autowired
-        // UserService userService;
+        @Autowired
+        UserService userService;
 
         @GetMapping("/users")
         public List<User> getUsers() {
@@ -34,7 +34,7 @@ import org.springframework.web.bind.annotation.RequestBody;
         
         @PostMapping("/users")
         public void addUsers(@RequestBody User user){
-            // userService.addUser(user);
+            userService.addUser(user);
         }
         
     }
