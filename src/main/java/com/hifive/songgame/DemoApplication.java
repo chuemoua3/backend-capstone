@@ -73,7 +73,7 @@ public class DemoApplication implements CommandLineRunner {
 		//Answer to 8-- C
 
 		//testing user (post Method)
-		this.userRepository.save(new User("chue", 0));
+		this.userRepository.save(new User("chue"));
 		
 
 	}

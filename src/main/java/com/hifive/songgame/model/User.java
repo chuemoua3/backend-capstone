@@ -12,15 +12,13 @@ public class User {
     private long id;
 
     private String userName;
-    private int score;
 
     public User(){
 
     }
 
-    public User(String userName, int score) {
+    public User(String userName) {
         this.userName = userName;
-        this.score = score;
     }
 
     public long getId() {
@@ -38,15 +36,6 @@ public class User {
     public void setUserName(String userName) {
         this.userName = userName;
     }
-
-    public int getScore() {
-        return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
-    }
-
     
 
     
