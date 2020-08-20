@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
     @RestController
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin
     @RequestMapping("/api")
 
     public class UserController {
