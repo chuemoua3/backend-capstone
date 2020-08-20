@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin 
+@CrossOrigin
 @RequestMapping("/api")
 public class SongController {
 
